@@ -1,11 +1,7 @@
 import "./divider.css";
 
-const Divider = () => {
-  return <hr className="divider" />;
-};
-
-export const SmallDivider = () => {
-  return <hr className="small-divider" />;
+const Divider = ({ customHeight }: any) => {
+  return <hr className="divider" style={{ height: customHeight }} />;
 };
 
 export default Divider;

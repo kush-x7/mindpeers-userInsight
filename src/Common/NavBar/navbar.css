@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
+  padding: 22px 0;
 }
 
 .navbar-back-btn-box {

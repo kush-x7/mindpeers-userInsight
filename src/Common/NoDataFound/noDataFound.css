@@ -1,0 +1,27 @@
+.no-data-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-data-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+
+  text-align: center;
+
+  color: #e1e1e1;
+
+  margin: 16px 0 12px 0;
+}
+
+.no-data-get-started {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  color: #b5d654;
+}

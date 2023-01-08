@@ -7,9 +7,11 @@ import stepsIconPath from "../../svg/steps-svg.svg";
 import humanIconPath from "../../svg/human-svg.svg";
 import sleepIconPath from "../../svg/sleep-svg.svg";
 import bmrIconPath from "../../svg/bmr-svg.svg";
+
 import Divider from "../../Common/Divider/Divider";
 import Recommendation from "../../Common/Recommendation/Recommendation";
 import CardContainer from "../../Common/CardContainer/CardContainer";
+import NoDataFound from "../../Common/NoDataFound/NoDataFound";
 
 const HealthTrackerData = [
   {
@@ -53,6 +55,7 @@ const MindBodyConnect = () => {
   return (
     <>
       <NavBar title="Mind-Body Connect" />
+      <NoDataFound />
 
       <TitleHoursAccordionInfo
         title="About Mind-Body Connect"
