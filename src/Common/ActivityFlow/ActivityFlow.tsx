@@ -9,7 +9,7 @@ const ActivityFlow = () => {
           My Flow Activity of the Week
         </div>
         <div className="flow-of-the-week-game">
-          <div className="icon-container">
+          <div className="flow-of-the-week-game-icon-container">
             <img src={joyPad} alt="icon" />
           </div>
 

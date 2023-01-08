@@ -1,0 +1,29 @@
+.iconTitleHours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider:last-child {
+  display: none;
+}
+
+.left-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.right-box {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}
+
+.show-game-hour-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

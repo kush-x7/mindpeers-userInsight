@@ -4,6 +4,7 @@ import InfoBtn from "../InfoBtn/InfoBtn";
 import Accordion from "../Accordion/Accodion";
 import Divider from "../Divider/Divider";
 import CardContainer from "../CardContainer/CardContainer";
+import GameHourDivider from "../Divider/GameHoursDivider/GameHourDivider";
 
 interface TitleHoursAccordionInfoProp {
   title?: string;
@@ -16,6 +17,7 @@ interface TitleHoursAccordionInfoProp {
   description?: string;
   showDescription?: boolean;
   infoDescription?: string;
+  streaksArray?: any;
 }
 
 const TitleHoursAccordionInfo = ({
@@ -27,8 +29,10 @@ const TitleHoursAccordionInfo = ({
   showTitleInfoIcon,
   description,
   infoDescription,
+  streaksArray,
 }: TitleHoursAccordionInfoProp) => {
   const [isInfoVisible, setInfoVisible] = useState(false);
+  const [isAccordionVisible, setAccordionVisible] = useState(false);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
 
   return (
@@ -62,9 +66,9 @@ const TitleHoursAccordionInfo = ({
           </div>
         </div>
 
-        {isDescriptionVisible && (
+        {isDescriptionVisible && description && (
           <div className="description-row">
-            {description && <div className="description">{description}</div>}
+            <div className="description">{description}</div>
           </div>
         )}
 
@@ -93,6 +97,12 @@ const TitleHoursAccordionInfo = ({
               </div>
             )}
           </CardContainer>
+
+          <div className="show-game-hour-container">
+            <GameHourDivider />
+            <GameHourDivider />
+            <GameHourDivider />
+          </div>
         </div>
       </div>
     </CardContainer>

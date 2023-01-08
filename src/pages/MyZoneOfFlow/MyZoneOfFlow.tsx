@@ -4,10 +4,24 @@ import NavBar from "../../Common/NavBar/NavBar";
 import Recommendation from "../../Common/Recommendation/Recommendation";
 import TitleHoursAccordionInfo from "../../Common/TitleHoursAccordionInfo/TitleHoursAccordionInfo";
 import Toolkit from "../../Common/Toolkit/Toolkit";
+import purpleJoyPad from "../../svg/purple-joypad.svg";
 
 import "./myZoneOfFLow.css";
 
 const MyZoneOfFlow = ({ navTitle }: any) => {
+  // const flowStreak = [
+  //   {
+  //     iconPath: { purpleJoyPad },
+  //     title: "Games",
+  //     time: "1hr",
+  //   },
+  //   {
+  //     iconPath: { purpleJoyPad },
+  //     title: "Games",
+  //     time: "1hr",
+  //   },
+  // ];
+
   return (
     <>
       <NavBar title={navTitle} />
@@ -27,6 +41,7 @@ const MyZoneOfFlow = ({ navTitle }: any) => {
         showTitleInfoIcon={true}
         showAccordion={true}
         infoDescription="Total time Spent in the week on tools"
+        // streaksArray={flowStreak}
       />
 
       <TitleHoursAccordionInfo
