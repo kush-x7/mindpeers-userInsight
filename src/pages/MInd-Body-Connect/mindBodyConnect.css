@@ -1,0 +1,73 @@
+/*  NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-back-btn-box {
+  width: 40px;
+  height: 40px;
+  background-color: #3b3b3d;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+.navbar-heading {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* -------------------------------------------------  */
+
+.mindful-minutes-container {
+  background-color: #393939;
+  padding: 20px 16px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.mindful-minutes-container--first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mindful-minutes-first-column {
+}
+
+.first-column-title {
+}
+
+.first-column-sub-title {
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #e1e1e1;
+}
+
+.mindful-minutes-second-column {
+}
+
+.second-column-hours-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #b2ffda;
+  margin-bottom: 10px;
+}
+
+.second-column-info {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  color: black;
+  background: linear-gradient(214.01deg, #2f80ed -45.29%, #b2ffda 128.06%);
+
+  padding-top: 0.75px;
+  margin: 0 0 0 auto;
+
+  cursor: pointer;
+}
