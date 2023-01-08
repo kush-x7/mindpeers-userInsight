@@ -1,36 +1,26 @@
-import { useState } from "react";
+import NavBar from "../../Common/NavBar/NavBar";
+import TitleHoursAccordionInfo from "../../Common/TitleHoursAccordionInfo/TitleHoursAccordionInfo";
 import "./mindBodyConnect.css";
 const MindBodyConnect = () => {
-  const [isInfoVisible, setInfoVisible] = useState(false);
-
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar-back-btn-box"></div>
-        <div className="navbar-heading">Mind-Body Connect</div>
-      </nav>
+      <NavBar title="Mind-Body Connect" />
 
-      <div className="mindful-minutes-container">
-        <div className="mindful-minutes-container--first-row">
-          <div className="mindful-minutes-first-column">
-            <div className="first-column-title">Mindful Minutes</div>
-            <div className="first-column-sub-title">Weekly</div>
-          </div>
-          <div className="mindful-minutes-second-column">
-            <div className="second-column-hours-text">4hr 30min</div>
-            <div
-              className="second-column-info"
-              onClick={() => {
-                alert(2);
-              }}
-            >
-              <span className="info-text">i</span>
-            </div>
-          </div>
-        </div>
+      <TitleHoursAccordionInfo
+        title="About Mind-Body Connect"
+        showAccordion={true}
+        description="Any time you move your body and shift your posture, you shift your physiology, which, in turn, shifts the activity of your autonomic nervous system. Therefore, you can use movement to shift your emotions and your mood."
+        showDescription={true}
+      />
 
-        <div className="mindful-minutes-container--second-row"></div>
-      </div>
+      <TitleHoursAccordionInfo
+        title="Mindful Minutes"
+        // showTitleInfoIcon={true}
+        subTitle="weekly"
+        // showAccordion={true}
+        showInfoIcon={true}
+        timeSpent="4hr 30min"
+      />
     </>
   );
 };
