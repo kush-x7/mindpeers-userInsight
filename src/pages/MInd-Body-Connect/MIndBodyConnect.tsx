@@ -8,6 +8,8 @@ import humanIconPath from "../../../public/human-svg.svg";
 import sleepIconPath from "../../../public/sleep-svg.svg";
 import bmrIconPath from "../../../public/bmr-svg.svg";
 import Divider from "../../Common/Divider/Divider";
+import Recommendation from "../../Common/Recommendation/Recommendation";
+import CardContainer from "../../Common/CardContainer/CardContainer";
 
 const HealthTrackerData = [
   {
@@ -80,6 +82,10 @@ const MindBodyConnect = () => {
       </div>
 
       <Divider />
+
+      <CardContainer>
+        <Recommendation />
+      </CardContainer>
     </>
   );
 };

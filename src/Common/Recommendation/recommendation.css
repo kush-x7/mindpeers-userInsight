@@ -1,0 +1,43 @@
+.recommendation-container {
+  display: flex;
+  /* justify-content: space-evenly; 
+  */
+  justify-content: space-between;
+}
+
+.content {
+  width: 50%;
+}
+
+.micro-lesson {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}
+
+.lessons-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+
+  color: #e1e1e1;
+
+  margin: 12px 0 16px 0;
+}
+
+.get-started {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  color: #b5d654;
+}
+
+.icon-container {
+  align-self: center;
+}
