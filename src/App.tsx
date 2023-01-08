@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="app-container">
         {/* <MindBodyConnect navTitle="Mind-Body Connect" /> */}
-        {/* <MyZoneOfFlow navTitle="My Zone of Flow" /> */}
+        <MyZoneOfFlow navTitle="My Zone of Flow" />
       </div>
     </>
   );

@@ -17,7 +17,8 @@ interface TitleHoursAccordionInfoProp {
   description?: string;
   showDescription?: boolean;
   infoDescription?: string;
-  streaksArray?: any;
+  showGameHourDivider?: boolean;
+  GameHourDividerList?: any;
 }
 
 const TitleHoursAccordionInfo = ({
@@ -29,7 +30,8 @@ const TitleHoursAccordionInfo = ({
   showTitleInfoIcon,
   description,
   infoDescription,
-  streaksArray,
+  showGameHourDivider,
+  GameHourDividerList,
 }: TitleHoursAccordionInfoProp) => {
   const [isInfoVisible, setInfoVisible] = useState(false);
   const [isAccordionVisible, setAccordionVisible] = useState(false);
@@ -98,11 +100,13 @@ const TitleHoursAccordionInfo = ({
             )}
           </CardContainer>
 
-          <div className="show-game-hour-container">
-            <GameHourDivider />
-            <GameHourDivider />
-            <GameHourDivider />
-          </div>
+          {showGameHourDivider && isDescriptionVisible && (
+            <div className="show-game-hour-container">
+              {GameHourDividerList.map(() => {
+                return <GameHourDivider />;
+              })}
+            </div>
+          )}
         </div>
       </div>
     </CardContainer>

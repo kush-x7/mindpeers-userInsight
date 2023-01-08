@@ -9,18 +9,18 @@ import purpleJoyPad from "../../svg/purple-joypad.svg";
 import "./myZoneOfFLow.css";
 
 const MyZoneOfFlow = ({ navTitle }: any) => {
-  // const flowStreak = [
-  //   {
-  //     iconPath: { purpleJoyPad },
-  //     title: "Games",
-  //     time: "1hr",
-  //   },
-  //   {
-  //     iconPath: { purpleJoyPad },
-  //     title: "Games",
-  //     time: "1hr",
-  //   },
-  // ];
+  const flowStreak = [
+    {
+      iconPath: { purpleJoyPad },
+      title: "Games",
+      time: "1hr",
+    },
+    {
+      iconPath: { purpleJoyPad },
+      title: "Games",
+      time: "1hr",
+    },
+  ];
 
   return (
     <>
@@ -41,7 +41,8 @@ const MyZoneOfFlow = ({ navTitle }: any) => {
         showTitleInfoIcon={true}
         showAccordion={true}
         infoDescription="Total time Spent in the week on tools"
-        // streaksArray={flowStreak}
+        showGameHourDivider={true}
+        GameHourDividerList={flowStreak}
       />
 
       <TitleHoursAccordionInfo
