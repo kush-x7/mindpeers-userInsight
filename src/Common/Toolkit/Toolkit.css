@@ -1,0 +1,45 @@
+.toolKit-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}
+
+table,
+th,
+td {
+  border: solid 1px #393939;
+  padding: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+th,
+.table-row-heading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}
+
+td {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}
+
+.heading-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

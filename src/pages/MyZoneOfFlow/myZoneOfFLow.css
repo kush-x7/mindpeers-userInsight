@@ -1,0 +1,55 @@
+.flow-of-the-week-game {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(
+      83.18% 73.44% at 12.64% 12.94%,
+      rgba(44, 44, 46, 0.3) 0%,
+      rgba(57, 57, 57, 0.3) 0.01%,
+      rgba(140, 140, 140, 0.12) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 1px solid #393939;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container img {
+  height: 23px;
+  height: 15.24px;
+}
+
+.flow-of-the-week-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flow-of-the-week-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+
+  color: #e1e1e1;
+}
+
+.game-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}

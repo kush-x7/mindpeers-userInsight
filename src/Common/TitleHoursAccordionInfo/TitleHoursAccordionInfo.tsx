@@ -15,6 +15,7 @@ interface TitleHoursAccordionInfoProp {
   showInfoIcon?: boolean;
   description?: string;
   showDescription?: boolean;
+  infoDescription?: string;
 }
 
 const TitleHoursAccordionInfo = ({
@@ -25,6 +26,7 @@ const TitleHoursAccordionInfo = ({
   showInfoIcon,
   showTitleInfoIcon,
   description,
+  infoDescription,
 }: TitleHoursAccordionInfoProp) => {
   const [isInfoVisible, setInfoVisible] = useState(false);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
@@ -74,22 +76,22 @@ const TitleHoursAccordionInfo = ({
           <Divider customHeight="1px" />
 
           <CardContainer>
-            <div className="explain-info-row">
-              <div className="info-section">
-                <InfoBtn />
-                <div className="info-text">
-                  Total time Spent on mindful minutes
+            {infoDescription && (
+              <div className="explain-info-row">
+                <div className="info-section">
+                  <InfoBtn />
+                  <div className="info-text">{infoDescription}</div>
+                </div>
+                <div
+                  className="close-button"
+                  onClick={() => {
+                    setInfoVisible(false);
+                  }}
+                >
+                  Got It
                 </div>
               </div>
-              <div
-                className="close-button"
-                onClick={() => {
-                  setInfoVisible(false);
-                }}
-              >
-                Got It
-              </div>
-            </div>
+            )}
           </CardContainer>
         </div>
       </div>

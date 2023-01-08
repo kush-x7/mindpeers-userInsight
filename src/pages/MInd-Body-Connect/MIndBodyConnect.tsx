@@ -51,10 +51,10 @@ const HealthTrackerData = [
   },
 ];
 
-const MindBodyConnect = () => {
+const MindBodyConnect = ({ navTitle }: any) => {
   return (
     <>
-      <NavBar title="Mind-Body Connect" />
+      <NavBar title={navTitle} />
       <NoDataFound />
 
       <TitleHoursAccordionInfo
@@ -70,6 +70,7 @@ const MindBodyConnect = () => {
         // showAccordion={true}
         showInfoIcon={true}
         timeSpent="4hr 30min"
+        infoDescription="Total time Spent on mindful minutes"
       />
       <div className="health-tracker-card-container">
         {HealthTrackerData.map((card) => {
@@ -87,10 +88,7 @@ const MindBodyConnect = () => {
 
       <Divider />
 
-      <div className="recommendation-heading">Recommendations For You</div>
-      <CardContainer>
-        <Recommendation />
-      </CardContainer>
+      <Recommendation />
     </>
   );
 };
