@@ -10,7 +10,7 @@ interface TitleHoursAccordionInfoProp {
   showAccordion?: boolean;
   timeSpent?: string;
   subTitle?: string;
-  hideTitleIcon?: boolean;
+
   showInfoIcon?: boolean;
   description?: string;
   showDescription?: boolean;
@@ -21,14 +21,12 @@ const TitleHoursAccordionInfo = ({
   showAccordion,
   timeSpent,
   subTitle,
-  hideTitleIcon,
   showInfoIcon,
   showTitleInfoIcon,
   description,
 }: TitleHoursAccordionInfoProp) => {
   const [isInfoVisible, setInfoVisible] = useState(false);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
-  //   const [isAccordionVisible, setIsAccordion] = useState(false);
 
   return (
     <div className="container">

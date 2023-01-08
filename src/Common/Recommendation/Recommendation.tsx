@@ -1,5 +1,5 @@
 import "./recommendation.css";
-import recommendationSvgPath from "../../../public/recommendation-svg.svg";
+import recommendationSvgPath from "../../svg/recommendation-svg.svg";
 
 const Recommendation = () => {
   return (

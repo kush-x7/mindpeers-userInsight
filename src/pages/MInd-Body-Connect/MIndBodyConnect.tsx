@@ -2,11 +2,11 @@ import NavBar from "../../Common/NavBar/NavBar";
 import TitleHoursAccordionInfo from "../../Common/TitleHoursAccordionInfo/TitleHoursAccordionInfo";
 import HealthTracker from "../../components/HealthTracker/HealthTracker";
 import "./mindBodyConnect.css";
-import heartIconPath from "../../../public/heart-svg.svg";
-import stepsIconPath from "../../../public/steps-svg.svg";
-import humanIconPath from "../../../public/human-svg.svg";
-import sleepIconPath from "../../../public/sleep-svg.svg";
-import bmrIconPath from "../../../public/bmr-svg.svg";
+import heartIconPath from "../../svg/heart-svg.svg";
+import stepsIconPath from "../../svg/steps-svg.svg";
+import humanIconPath from "../../svg/human-svg.svg";
+import sleepIconPath from "../../svg/sleep-svg.svg";
+import bmrIconPath from "../../svg/bmr-svg.svg";
 import Divider from "../../Common/Divider/Divider";
 import Recommendation from "../../Common/Recommendation/Recommendation";
 import CardContainer from "../../Common/CardContainer/CardContainer";
@@ -53,6 +53,7 @@ const MindBodyConnect = () => {
   return (
     <>
       <NavBar title="Mind-Body Connect" />
+
       <TitleHoursAccordionInfo
         title="About Mind-Body Connect"
         showAccordion={true}
@@ -83,6 +84,7 @@ const MindBodyConnect = () => {
 
       <Divider />
 
+      <div className="recommendation-heading">Recommendations For You</div>
       <CardContainer>
         <Recommendation />
       </CardContainer>
