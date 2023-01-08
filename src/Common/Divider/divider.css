@@ -1,0 +1,13 @@
+.divider {
+  margin: 0 -20px;
+  background-color: #393939;
+  height: 4px;
+  border: none;
+}
+
+.small-divider {
+  margin: 0 -16px;
+  background-color: #393939;
+  opacity: 0.5;
+  height: 1px;
+}

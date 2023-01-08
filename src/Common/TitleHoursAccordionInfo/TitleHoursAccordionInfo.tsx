@@ -2,6 +2,7 @@ import "./TitleHoursAccordionInfo.css";
 import { useState } from "react";
 import InfoBtn from "../InfoBtn/InfoBtn";
 import Accordion from "../Accordion/Accodion";
+import Divider, { SmallDivider } from "../Divider/Divider";
 
 interface TitleHoursAccordionInfoProp {
   title?: string;
@@ -70,7 +71,7 @@ const TitleHoursAccordionInfo = ({
           isInfoVisible ? "show-info-container " : "hide-info-container "
         }`}
       >
-        <hr className="divider" />
+        <SmallDivider />
 
         <div className="explain-info-row">
           <div className="info-section">

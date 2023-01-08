@@ -1,0 +1,10 @@
+.health-tracker-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: auto; */
+  gap: 20px 17px;
+}
+
+.health-tracker-card:nth-last-child(-n + 1):nth-child(odd) {
+  grid-column: span 2;
+}

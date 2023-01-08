@@ -1,0 +1,63 @@
+.health-tracker-card {
+  padding: 20px;
+
+  background: radial-gradient(
+    83.18% 73.44% at 12.64% 12.94%,
+    rgba(44, 44, 46, 0.3) 0%,
+    rgba(57, 57, 57, 0.3) 0.01%,
+    rgba(140, 140, 140, 0.12) 100%
+  );
+  border: 1px solid #393939;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17px);
+
+  border-radius: 16px;
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.health-tracker-title {
+  display: flex;
+  align-items: center;
+}
+
+.health-tracker-title-icon {
+  display: flex;
+}
+.health-tracker-title-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.health-tracker-title-count-number {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f14658;
+
+  margin: 0 4px 0 9px;
+}
+
+.health-tracker-title-count-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+
+  color: #acacac;
+
+  align-self: flex-end;
+}
+
+.health-tracker-sub-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  color: #f14658;
+}

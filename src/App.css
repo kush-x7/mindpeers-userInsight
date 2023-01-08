@@ -1,7 +1,11 @@
 .app-container {
   background-color: #212121;
-  width: 375px;
+  max-width: 375px;
   border-radius: 20px;
   margin: 0 auto;
   padding: 40px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
