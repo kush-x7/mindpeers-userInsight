@@ -41,8 +41,7 @@ const MyZoneOfFlow = ({ navTitle }: any) => {
         showTitleInfoIcon={true}
         showAccordion={true}
         infoDescription="Total time Spent in the week on tools"
-        showGameHourDivider={true}
-        GameHourDividerList={flowStreak}
+        gameTimeList={[{}, {}, {}]}
       />
 
       <TitleHoursAccordionInfo
@@ -52,6 +51,7 @@ const MyZoneOfFlow = ({ navTitle }: any) => {
         subTitle="Weekly"
         showAccordion={true}
         infoDescription="Benchmark to average mindpeers users"
+        gameTimeList={[{}, {}, {}]}
       />
 
       <Toolkit />

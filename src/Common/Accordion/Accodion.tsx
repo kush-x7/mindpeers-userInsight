@@ -1,11 +1,27 @@
 import "./accordion.css";
-const Accordion = ({ state, setState }: any) => {
+const Accordion = ({
+  descriptionState,
+  setDescriptionState,
+  gameTimeState,
+  setGameTimeState,
+  isDescriptionAvailable,
+  isGameTimeSpentDataAvailable,
+}: any) => {
+  const handleCLick = () => {
+    if (isDescriptionAvailable) {
+      setDescriptionState(!descriptionState);
+    }
+    if (isGameTimeSpentDataAvailable?.length >= 1) {
+      setGameTimeState(!gameTimeState);
+    }
+  };
+
   return (
     <div
-      className={`${state ? "rotate" : ""} `}
-      onClick={() => {
-        setState(!state);
-      }}
+      className={`${descriptionState ? "rotate" : ""} `}
+      onClick={handleCLick}
+      // setGameTimeState(!gameTimeState);
+      // setDescriptionState(!descriptionState);
     >
       <svg width={12} height={7} fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

@@ -17,25 +17,27 @@ interface TitleHoursAccordionInfoProp {
   description?: string;
   showDescription?: boolean;
   infoDescription?: string;
-  showGameHourDivider?: boolean;
-  GameHourDividerList?: any;
+
+  gameTimeList?: any;
 }
 
 const TitleHoursAccordionInfo = ({
   title,
-  showAccordion,
-  timeSpent,
-  subTitle,
-  showInfoIcon,
   showTitleInfoIcon,
+  subTitle,
+  timeSpent,
+  showInfoIcon,
+  showAccordion,
   description,
   infoDescription,
-  showGameHourDivider,
-  GameHourDividerList,
+  gameTimeList,
 }: TitleHoursAccordionInfoProp) => {
   const [isInfoVisible, setInfoVisible] = useState(false);
-  const [isAccordionVisible, setAccordionVisible] = useState(false);
+  const [isGAmeTimeVisible, setGameTimeVisible] = useState(false);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
+
+  console.log(">>>>>.isInfovisible", isInfoVisible);
+  console.log(">>>>>.isGameTImeVIsible", isGAmeTimeVisible);
 
   return (
     <CardContainer>
@@ -58,8 +60,12 @@ const TitleHoursAccordionInfo = ({
             {timeSpent && <div className="time-spent ">{timeSpent}</div>}
             {showAccordion && (
               <Accordion
-                state={isDescriptionVisible}
-                setState={setIsDescriptionVisible}
+                isDescriptionAvailable={description}
+                isGameTimeSpentDataAvailable={gameTimeList}
+                descriptionState={isDescriptionVisible}
+                setDescriptionState={setIsDescriptionVisible}
+                gameTimeState={isGAmeTimeVisible}
+                setGameTimeState={setGameTimeVisible}
               />
             )}
             {showInfoIcon && (
@@ -68,46 +74,44 @@ const TitleHoursAccordionInfo = ({
           </div>
         </div>
 
-        {isDescriptionVisible && description && (
+        {isDescriptionVisible && (
           <div className="description-row">
             <div className="description">{description}</div>
           </div>
         )}
 
-        <div
-          className={` ${
-            isInfoVisible ? "show-info-container " : "hide-info-container "
-          }`}
-        >
-          <Divider customHeight="1px" />
+        {(isInfoVisible || isGAmeTimeVisible) && (
+          <div className="show-info-container ">
+            <Divider customHeight="1px" />
 
-          <CardContainer>
-            {infoDescription && (
-              <div className="explain-info-row">
-                <div className="info-section">
-                  <InfoBtn />
-                  <div className="info-text">{infoDescription}</div>
+            {isInfoVisible && (
+              <CardContainer>
+                <div className="explain-info-row">
+                  <div className="info-section">
+                    <InfoBtn />
+                    <div className="info-text">{infoDescription}</div>
+                  </div>
+                  <div
+                    className="close-button"
+                    onClick={() => {
+                      setInfoVisible(false);
+                    }}
+                  >
+                    Got It
+                  </div>
                 </div>
-                <div
-                  className="close-button"
-                  onClick={() => {
-                    setInfoVisible(false);
-                  }}
-                >
-                  Got It
-                </div>
+              </CardContainer>
+            )}
+
+            {isGAmeTimeVisible && (
+              <div className="show-game-hour-container">
+                {gameTimeList.map((data: any, index: any) => {
+                  return <GameHourDivider key={index} />;
+                })}
               </div>
             )}
-          </CardContainer>
-
-          {showGameHourDivider && isDescriptionVisible && (
-            <div className="show-game-hour-container">
-              {GameHourDividerList.map(() => {
-                return <GameHourDivider />;
-              })}
-            </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </CardContainer>
   );
