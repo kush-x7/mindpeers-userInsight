@@ -1,0 +1,51 @@
+.main-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+
+  margin-top: 8px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-text {
+  width: 70%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+
+  color: #e1e1e1;
+}
+
+.wrapper-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  /* identical to box height, or 100% */
+
+  color: #b2ffda;
+}
+
+.wrapper-small-number {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.wrapper .divider:first-child {
+  display: none;
+}

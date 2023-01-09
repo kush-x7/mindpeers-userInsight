@@ -8,8 +8,8 @@ function App() {
     <>
       <div className="app-container">
         {/* <MindBodyConnect navTitle="Mind-Body Connect" /> */}
-        <MyZoneOfFlow navTitle="My Zone of Flow" />
-        {/* <MyTherapyJourney navTitle="My Therapy Journey" /> */}
+        {/* <MyZoneOfFlow navTitle="My Zone of Flow" /> */}
+        <MyTherapyJourney navTitle="My Therapy Journey" />
       </div>
     </>
   );

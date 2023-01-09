@@ -36,9 +36,6 @@ const TitleHoursAccordionInfo = ({
   const [isGAmeTimeVisible, setGameTimeVisible] = useState(false);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
 
-  console.log(">>>>>.isInfovisible", isInfoVisible);
-  console.log(">>>>>.isGameTImeVIsible", isGAmeTimeVisible);
-
   return (
     <CardContainer>
       <div className="container">

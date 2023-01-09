@@ -26,7 +26,6 @@ const MyZoneOfFlow = ({ navTitle }: any) => {
     <>
       <NavBar title={navTitle} />
 
-      <ActivityFlow />
       <TitleHoursAccordionInfo
         title="About My Zone of Flow"
         showAccordion={true}
@@ -34,6 +33,7 @@ const MyZoneOfFlow = ({ navTitle }: any) => {
         infoDescription="Total time Spent in the week on tools"
       />
 
+      <ActivityFlow />
       <TitleHoursAccordionInfo
         title="My Flow Streak"
         timeSpent="4hr 30min"
