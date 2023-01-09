@@ -1,4 +1,5 @@
 import RadialBar from "../../ChartComponents/RadialBar/RadialBar";
+import Button from "../../Common/Button/Button";
 import Divider from "../../Common/Divider/Divider";
 import FullHeadingCtaCardContainer from "../../Common/FullHeadingCtaCardContainer/FullHeadingCtaCardContainer";
 import FullHorizontalCardContainer from "../../Common/FullHorizontalCardContainer/FullHorizontalCardContainer";
@@ -32,6 +33,14 @@ const UserInsights = () => {
         cta="Explore More"
         graph={<RadialBar />}
       />
+
+      <FullHorizontalCardContainer
+        // mainHeading="My Vulnerability Power"
+        // cta="Explore More"
+        showTitleWithIcon={true}
+      />
+
+      <Button />
     </>
   );
 };

@@ -1,0 +1,17 @@
+.golden-btn {
+  color: #000000;
+  background: linear-gradient(
+    90deg,
+    #ae8625 -14.18%,
+    #f7ef8a 49.43%,
+    #d2ac47 91.44%,
+    #d2ac47 119.7%,
+    #edc967 119.7%
+  );
+  border-radius: 8px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

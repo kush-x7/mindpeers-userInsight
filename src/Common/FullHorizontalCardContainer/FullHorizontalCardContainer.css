@@ -53,3 +53,43 @@
 
   color: #b5d654;
 }
+
+.icon-text-container-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.horizontal-card-icon {
+  background: #363636;
+  border: 1px solid #393939;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6.66px;
+}
+
+.horizontal-card-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.total {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  color: #e1e1e1;
+}
+
+.u-top-margin-16 {
+  margin-top: 16px;
+}
