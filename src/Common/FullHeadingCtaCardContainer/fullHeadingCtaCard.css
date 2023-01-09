@@ -4,27 +4,3 @@
   gap: 20px;
 }
 
-.heading-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.complete-card--heading {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  /* identical to box height, or 100% */
-
-  color: #ffffff;
-}
-
-.complete-card--cta {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 12px;
-  /* identical to box height, or 86% */
-
-  text-decoration-line: underline;
-
-  color: #00b3cc;
-}

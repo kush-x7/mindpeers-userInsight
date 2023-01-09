@@ -1,0 +1,55 @@
+.horizontal-card-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.horizontal-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.horizontal-card-heading {
+  width: 70%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  color: #ffffff;
+}
+
+.horizontal-card-score-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 20px 0;
+}
+
+.score-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  /* identical to box height, or 100% */
+
+  color: #b2ffda;
+}
+
+.score-weekly-text {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+
+  color: #e1e1e1;
+}
+
+.get-started {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height, or 100% */
+
+  color: #b5d654;
+}
