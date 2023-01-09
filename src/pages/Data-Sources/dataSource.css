@@ -1,0 +1,40 @@
+.data-source-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data-source-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+}
+
+.data-source-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.data-source-sub-heading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+
+  margin-bottom: 12px;
+}
+
+.data-source-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+
+  color: #e1e1e1;
+}

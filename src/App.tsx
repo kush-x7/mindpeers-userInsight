@@ -1,4 +1,5 @@
 import "./App.css";
+import DataSource from "./pages/Data-Sources/DataSource";
 // import RadialBar from "./ChartComponents/RadialBar/RadialBar";
 import MindBodyConnect from "./pages/MInd-Body-Connect/MIndBodyConnect";
 import MyLearnedOptimism from "./pages/MyLearnedOptimism/MyLearnedOptimism";
@@ -11,6 +12,7 @@ function App() {
     <>
       <div className="app-container">
         <UserInsights />
+        {/* <DataSource navTitle="Data Sources" /> */}
         {/* <MindBodyConnect navTitle="Mind-Body Connect" /> */}
         {/* <MyZoneOfFlow navTitle="My Zone of Flow" /> */}
         {/* <MyTherapyJourney navTitle="My Therapy Journey" /> */}
