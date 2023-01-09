@@ -10,6 +10,8 @@ const HeadingTextNumber = ({
   return (
     <>
       {mainHeading && <div className="main-heading">{mainHeading}</div>}
+
+      {/* <div className="main-heading-container"></div> */}
       <CardContainer>
         <div className="wrapper">
           {smallTextNumberArray &&

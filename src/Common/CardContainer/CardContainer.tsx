@@ -1,7 +1,13 @@
 import "./cardContainer.css";
 
-const CardContainer = ({ children }: any) => {
-  return <div className="card-container">{children}</div>;
+const CardContainer = ({ children, hideBackground }: any) => {
+  return (
+    <div
+      className={`card-container ${hideBackground ? "" : "show-background"} `}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default CardContainer;

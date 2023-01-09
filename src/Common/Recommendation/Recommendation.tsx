@@ -2,10 +2,10 @@ import "./recommendation.css";
 import recommendationSvgPath from "../../svg/recommendation-svg.svg";
 import CardContainer from "../CardContainer/CardContainer";
 
-const Recommendation = () => {
+const Recommendation = ({ heading = "Recommendations For You" }: any) => {
   return (
     <>
-      <div className="recommendation-heading">Recommendations For You</div>
+      <div className="recommendation-heading">{heading}</div>
 
       <CardContainer>
         {" "}

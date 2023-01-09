@@ -1,10 +1,12 @@
 import "./navbar.css";
 
-const NavBar = ({ title }: any) => {
+const NavBar = ({ title, showBackBtn = true }: any) => {
   return (
     <nav className="navbar">
-      <div className="navbar-back-btn-box"></div>
-      <div className="navbar-heading">{title}</div>
+      {showBackBtn && <div className="navbar-back-btn-box"></div>}
+      <div className="navbar-heading-container">
+        <div className="navbar-heading">{title}</div>
+      </div>
     </nav>
   );
 };

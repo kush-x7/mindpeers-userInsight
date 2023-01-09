@@ -1,0 +1,19 @@
+.graph-card-container {
+  padding: 20px;
+}
+
+.show-background {
+  background: radial-gradient(
+      83.18% 73.44% at 12.64% 12.94%,
+      rgba(44, 44, 46, 0.3) 0%,
+      rgba(57, 57, 57, 0.3) 0.01%,
+      rgba(140, 140, 140, 0.12) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 1px solid #393939;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+}

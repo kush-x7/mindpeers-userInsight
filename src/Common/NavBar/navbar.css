@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  gap: 18px;
   align-items: center;
   padding: 22px 0;
 }
@@ -9,7 +10,11 @@
   height: 40px;
   background-color: #3b3b3d;
   border-radius: 50%;
-  margin-right: 18px;
+}
+
+.navbar-heading-container {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .navbar-heading {
