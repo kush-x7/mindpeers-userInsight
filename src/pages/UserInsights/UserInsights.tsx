@@ -1,3 +1,4 @@
+import PolarArea from "../../ChartComponents/PolarArea";
 import RadialBar from "../../ChartComponents/RadialBar/RadialBar";
 import Button from "../../Common/Button/Button";
 import Divider from "../../Common/Divider/Divider";
@@ -14,7 +15,13 @@ const UserInsights = () => {
       <FullHeadingCtaCardContainer
         mainHeading="My Strength Blueprint"
         cta="Explore More"
-        graph={<RadialBar />}
+        graph={<PolarArea />}
+      />
+
+      <FullHeadingCtaCardContainer
+        mainHeading="My Strength Blueprint"
+        cta="Explore More"
+        graph={<PolarArea />}
       />
 
       <Recommendation heading="Recommendation on the basis of  your Strength Blue print" />

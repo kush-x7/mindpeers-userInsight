@@ -1,4 +1,5 @@
 import "./App.css";
+import PolarArea from "./ChartComponents/PolarArea";
 import DataSource from "./pages/Data-Sources/DataSource";
 // import RadialBar from "./ChartComponents/RadialBar/RadialBar";
 import MindBodyConnect from "./pages/MInd-Body-Connect/MIndBodyConnect";
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <div className="app-container">
+        {/* <PolarArea /> */}
         <UserInsights />
         {/* <DataSource navTitle="Data Sources" /> */}
         {/* <MindBodyConnect navTitle="Mind-Body Connect" /> */}
