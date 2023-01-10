@@ -1,21 +1,31 @@
 import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
+import "./singleGraphCard.css";
 
 const SingleRadialBar = () => {
-  const [series, setSeries] = useState([75]);
+  const [series, setSeries] = useState([50]);
   const [options, setOptions] = useState({
-    chart: {
-      toolbar: {
-        show: true,
+    responsive: [
+      {
+        breakpoint: undefined,
+        options: {
+          chart: {
+            width: "100%",
+            height: "100%",
+          },
+        },
       },
-    },
+    ],
+
     plotOptions: {
       radialBar: {
         startAngle: -90,
         endAngle: 90,
+        // reverse: true,
+
         hollow: {
           margin: 0,
-          size: "70%",
+          size: "80%",
           background: "transparent",
           //   position: "back",
           dropShadow: {
@@ -26,12 +36,13 @@ const SingleRadialBar = () => {
             opacity: 0.24,
           },
         },
+
         track: {
           background: "#363636",
-          //   strokeWidth: "67%",
+          //   strokeWidth: "80%",
           margin: 0, // margin is in pixels
           dropShadow: {
-            enabled: true,
+            enabled: false,
             top: -3,
             left: 0,
             blur: 4,
@@ -41,8 +52,9 @@ const SingleRadialBar = () => {
 
         dataLabels: {
           show: true,
+
           name: {
-            offsetY: -10,
+            offsetY: "-25",
             show: true,
             color: "#888",
             fontSize: "17px",
@@ -53,13 +65,15 @@ const SingleRadialBar = () => {
         },
       },
     },
+
     fill: {
       type: "gradient",
+      colors: ["#D6FF7F"],
       gradient: {
         shade: "dark",
         type: "horizontal",
         shadeIntensity: 0.5,
-        gradientToColors: ["#ABE5A1"],
+        gradientToColors: ["#00B3CC"],
         inverseColors: true,
         opacityFrom: 1,
         opacityTo: 1,
@@ -70,17 +84,20 @@ const SingleRadialBar = () => {
       lineCap: "round",
     },
     labels: ["Mood Meter"],
+
+    // grid: {
+    //   padding: {
+    //     top: -10,
+    //   },
+    // },
   });
 
   return (
-    <div id="card">
-      <div id="chart">
-        <ReactApexChart
-          options={options}
-          series={series}
-          type="radialBar"
-          height={350}
-        />
+    <div className="chart-card-container">
+      <div id="card">
+        <div id="chart">
+          <ReactApexChart options={options} series={series} type="radialBar" />
+        </div>
       </div>
     </div>
   );
