@@ -102,11 +102,11 @@ const SingleRadialBar = () => {
           <ReactApexChart options={options} series={series} type="radialBar" />
         </div>
       </div>
-      <div className="starting-emoji emoji-text-container">
+      <div className=" ending-emoji emoji-text-container">
         <img src={sadEmoji} alt="sad-emoji" />
         <div className="emoji-text">Zone of Languishing</div>
       </div>
-      <div className="ending-emoji emoji-text-container">
+      <div className="starting-emoji emoji-text-container">
         <img src={happyEmoji} alt="sad-emoji" />
         <div className="emoji-text">Zone of Flourishing</div>
       </div>

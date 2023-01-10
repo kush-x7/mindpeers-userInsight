@@ -4,11 +4,13 @@
   align-items: center;
 
   position: relative;
+
+  /* height: 30px; */
 }
 
 .emoji-text-container {
   position: absolute;
-  background-color: red;
+  /* background-color: red; */
   width: 10px;
   height: 10px;
 
@@ -17,17 +19,17 @@
   align-items: center;
   gap: 9px;
 
-  transform: translateY(-100%);
+  /* transform: translateY(-100%); */
 
   text-align: center;
 }
 
 .starting-emoji {
-  left: 30px;
+  left: 25px;
 }
 
 .ending-emoji {
-  right: 30px;
+  right: 25px;
 }
 
 .emoji-text {

@@ -19,6 +19,12 @@ const UserInsights = () => {
         graph={<PolarArea />}
       />
 
+      <FullHeadingCtaCardContainer
+        mainHeading="My Strength Blueprint"
+        cta="Explore More"
+        graph={<PolarArea />}
+      />
+
       <Recommendation heading="Recommendation on the basis of  your Strength Blue print" />
 
       <Divider customHeight="1px" />
