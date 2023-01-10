@@ -1,5 +1,6 @@
 import PolarArea from "../../ChartComponents/PolarArea";
 import RadialBar from "../../ChartComponents/RadialBar/RadialBar";
+import SingleRadialBar from "../../ChartComponents/SingleRaidalBar/SingleRadialBar";
 import Button from "../../Common/Button/Button";
 import Divider from "../../Common/Divider/Divider";
 import FullHeadingCtaCardContainer from "../../Common/FullHeadingCtaCardContainer/FullHeadingCtaCardContainer";
@@ -32,7 +33,7 @@ const UserInsights = () => {
       <FullHeadingCtaCardContainer
         mainHeading="My Learned Optimism"
         cta="Explore More"
-        graph={<RadialBar />}
+        graph={<SingleRadialBar />}
       />
 
       <FullHorizontalCardContainer
