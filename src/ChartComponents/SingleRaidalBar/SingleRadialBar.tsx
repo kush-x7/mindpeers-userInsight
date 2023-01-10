@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 import "./singleGraphCard.css";
+import sadEmoji from "../../svg/sad-icon.svg";
+import happyEmoji from "../../svg/happy-emoji.svg";
 
 const SingleRadialBar = () => {
   const [series, setSeries] = useState([50]);
@@ -83,6 +85,7 @@ const SingleRadialBar = () => {
     stroke: {
       lineCap: "round",
     },
+
     labels: ["Mood Meter"],
 
     // grid: {
@@ -98,6 +101,14 @@ const SingleRadialBar = () => {
         <div id="chart">
           <ReactApexChart options={options} series={series} type="radialBar" />
         </div>
+      </div>
+      <div className="starting-emoji emoji-text-container">
+        <img src={sadEmoji} alt="sad-emoji" />
+        <div className="emoji-text">Zone of Languishing</div>
+      </div>
+      <div className="ending-emoji emoji-text-container">
+        <img src={happyEmoji} alt="sad-emoji" />
+        <div className="emoji-text">Zone of Flourishing</div>
       </div>
     </div>
   );
