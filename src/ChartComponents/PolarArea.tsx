@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 const PolarArea = () => {
-  const [series, setSeries] = useState([100, 60, 100, 50, 80, 50, 10, 40]);
+  const [series, setSeries] = useState([70, 60, 100, 50, 80, 50, 10, 40]);
 
   function getMaxValueIndex(series: number[]) {
     return series.indexOf(Math.max(...series));

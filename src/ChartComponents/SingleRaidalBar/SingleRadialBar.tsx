@@ -21,6 +21,7 @@ const SingleRadialBar = () => {
 
     plotOptions: {
       radialBar: {
+        // position: back,
         startAngle: -90,
         endAngle: 90,
         // reverse: true,
@@ -29,7 +30,7 @@ const SingleRadialBar = () => {
           margin: 0,
           size: "80%",
           background: "transparent",
-          //   position: "back",
+          // position: "back",
           dropShadow: {
             enabled: true,
             top: 3,
@@ -106,7 +107,7 @@ const SingleRadialBar = () => {
         <img src={sadEmoji} alt="sad-emoji" />
         <div className="emoji-text">Zone of Languishing</div>
       </div>
-      <div className="starting-emoji emoji-text-container">
+      <div className="starting-emoji  emoji-text-container">
         <img src={happyEmoji} alt="sad-emoji" />
         <div className="emoji-text">Zone of Flourishing</div>
       </div>

@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <div className="app-container">
-        {/* <PolarArea /> */}
         <UserInsights />
         {/* <DataSource navTitle="Data Sources" /> */}
         {/* <MindBodyConnect navTitle="Mind-Body Connect" /> */}

@@ -1,3 +1,4 @@
+import ColumnChart from "../../ChartComponents/ColumnChart/ColumnChart";
 import PolarArea from "../../ChartComponents/PolarArea";
 import RadialBar from "../../ChartComponents/RadialBar/RadialBar";
 import SingleRadialBar from "../../ChartComponents/SingleRaidalBar/SingleRadialBar";
@@ -13,11 +14,11 @@ const UserInsights = () => {
     <>
       <NavBar title="User Insights" showBackBtn={false} />
 
-      <FullHeadingCtaCardContainer
+      {/* <FullHeadingCtaCardContainer
         mainHeading="My Strength Blueprint"
         cta="Explore More"
-        graph={<PolarArea />}
-      />
+        graph={<ColumnChart />}
+      /> */}
 
       <FullHeadingCtaCardContainer
         mainHeading="My Strength Blueprint"
